@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdAddAlarm } from "react-icons/md";
 
 function AppTodo({onNewItem}){
   
@@ -22,7 +23,7 @@ function AppTodo({onNewItem}){
     <div className="row todo-row">
       <div className="col-6"><input type="text" onChange={onNameChange} value={todoName} placeholder="Enter to do here"/></div>
       <div className="col-4"><input type="date"  onChange={onDateChange} value={dueDate}/></div>
-      <div className="col-2"><button type="button" onClick={handleButtonClicked} className="btn btn-success todo-btn">Add</button>
+      <div className="col-2"><button type="button" onClick={handleButtonClicked} className="btn btn-success todo-btn"><MdAddAlarm /></button>
       </div>
     </div>
   </div>);
